@@ -11,47 +11,38 @@ Note Taker
 
 [User Information](#user-information)
 
-[Contributions](#contributions)
-
-[Tests](#tests)
-
 [Questions](#questions)
 
 [What I Learned](#what-i-learned)
 
-[Code in index.js](#code-in-javascript-index)
+[Code in index.js](#code-in-javascript)
 
 [Dependencies](#dependencies)
 
 [Link to live site](#link-to-live-site)
 
-[Link to gitHub Repo](#link-to-github-repository)
+[Link to gitHub repo](#link-to-github-repository)
 
-[Images Of website functionality](#images-of-webpage-functionality)
+[Images of website functionality](#images-of-webpage-functionality)
 
 [License](#license)
 
 
 ## Description:
 
+This application will allow the user to take notes, save the note, and if desired, delete saved notes.
 
 ## Installation
 
+To install this application please fork this repo. Then, run in terminal //~ npm init -y //~ npm i express //~ npm i uuid
 
+This application has been launched through Heroku. However, if you wish to run this application locally run in terminal //~ npm start
 
 ## User Information
 
-<a href='https://github.com/RaszeroT'>Travis Shanhun's github username: RaszeroT</a>
+<a href='https://github.com/RaszeroT'> Travis Shanhun's github username: RaszeroT</a>
 
 Email: shanhun.codes@gmail.com
-
-## Contributors
-
-
-
-## Tests 
-
-
 
 ## Questions
 
@@ -63,15 +54,25 @@ Email: shanhun.codes@gmail.com
 
 ## What I learned:
 
+In this application I experimented with async promises (async and await) instead of .then promises which I found easier for readability and also created cleaner/neater looking code.
 
+## Code in JavaScript:
 
-## Code in JavaScript index:
+Server.js:
 
+Routes to html files
 
+note.js:
+
+GET and POST requests to read current data and post to page, then delete data from db.json using the id
 
 ## Dependencies 
 
+Express@4.17.1
 
+uuid@9.0.1
+
+nodemon@3.0.1 (this is for live updates while creating functions. This dependency is not necessary for running the application)
 
 ## Link to live site:
 
@@ -79,13 +80,13 @@ Email: shanhun.codes@gmail.com
 
 ## Video Tutorial:
 
-<a href=''>Video Tutorial</a>
+<a href='https://drive.google.com/file/d/18Y1h9Pg3y08pBwvyCnB9jSr_9xll0bMP/view'>Video Tutorial</a>
 
 ## Example Images:
 
-<img src="" width="300" height="300"> 
-<img src="" width="300" height="300"> 
-<img src="" width="300" height="300"> 
+<img src="./public/assets/images/index.jpeg" width="300" height="300"> 
+<img src="./public/assets/images/notes.jpeg" width="300" height="300"> 
+<img src="./public/assets/images/error.jpeg" width="300" height="300"> 
 
 ## License
 
