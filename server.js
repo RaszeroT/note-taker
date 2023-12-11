@@ -28,6 +28,6 @@ app.use("*", (req, res) => {
 });
 
 // listen for port
-app.listen(PORT, () => {
+app.listen(process.env.PORT, () => {
   console.log(`app listening at http://localhost:${PORT}`);
 });
